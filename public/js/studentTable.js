@@ -38,19 +38,16 @@ function renderStudentTable(table, data) {
     table.appendChild(tbody);
 }
 
-// helper function that renders a row of the table
+// helper function that renders a row of our table
 // tbody: the table body element in our HTML
 // student: the current student object we are making into a row
 function renderRow(tbody, student) {
-    // test print student object
-    console.log(student);
 
     // create row to add data to
     const tr = document.createElement("tr");
 
     // iterate through key value pairs in our student object
     for (const [key, value] of Object.entries(student)) {
-        console.log(`${key}: ${value}`);
         if (key === "averageGrade") { // if we are in the avaerageGrade column
             const td = document.createElement("td");  // create new td
 
@@ -75,24 +72,12 @@ function renderRow(tbody, student) {
     tbody.appendChild(tr);
 }
 
-function updateGrade(){
+function updateGrade(input){
     console.log("calling updateGrade() function");
-}
-
-// testing function ******************************************
-
-for(let i = 0; i < students.length; i++){
-    console.log(students[i]);
 }
 
 // get student-table table from index.html
 const studentTable = document.getElementById("student-table");
 
-// get button that triggers renderStudentTable function
-const renderTable = document.getElementById("render-table");
-
-// add event listener to trigger renderStudentTable funciton
-// when button is clicked
-renderTable.addEventListener("click", function () {
-    renderStudentTable(studentTable, students);
-});
+// render student table
+renderStudentTable(studentTable, students);
