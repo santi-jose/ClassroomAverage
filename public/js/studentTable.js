@@ -1,34 +1,15 @@
 // import student data from studentData.js
 import { students } from "./studentData.js";
+import { calculateClassroomAverage } from "./calculateClassroomAverage.js";
 
 // function to render student table from table element and array of student data 
 // table: a reference to an HTML table where data will be displayed
 // data: student data from studentData.js
 function renderStudentTable(table, data) {
-    // create thead to append to table
-    const thead = document.createElement("thead");
-    const trow = document.createElement("tr"); // create a table row
-
-    // array to store table headers
-    const headers = ["ID", "Name", "Address", "Average Grade"];
-
-    // iterate through headers  array and create table headers
-    for (let i = 0; i < headers.length; i++) {
-        const th = document.createElement("th");
-        th.innerText = headers[i];
-        trow.appendChild(th);
-    }
-
-    // append table row of headers to table head
-    thead.appendChild(trow);
-
-    // append thead to table element
-    table.appendChild(thead);
-
     // create a tbody element to append our new rows to
     const tbody = document.createElement("tbody");
 
-    // iterate through student data
+    // iterate through students data array
     for (let i = 0; i < data.length; i++) {
         // call renderRow function to create a row of our student object
         renderRow(tbody, data[i]);
@@ -40,7 +21,7 @@ function renderStudentTable(table, data) {
 
 // helper function that renders a row of our table
 // tbody: the table body element in our HTML
-// student: the current student object we are making into a row
+// student: the student object we are making into a row
 function renderRow(tbody, student) {
 
     // create row to add data to
@@ -55,9 +36,12 @@ function renderRow(tbody, student) {
             const input = document.createElement("input"); // add input element
             input.type = "text"; // set input to type text
             input.value = value; // set default value
+            input.student = student; // store reference to student object in input
 
             // add event listener to input
-            input.addEventListener("change", updateGrade);
+            input.addEventListener("change", function(){
+                updateGrade(input); // call updateGrade with input element as argument
+            });
 
             td.appendChild(input); // append input to td 
             tr.appendChild(td); // append td to tr
@@ -73,7 +57,15 @@ function renderRow(tbody, student) {
 }
 
 function updateGrade(input){
-    console.log("calling updateGrade() function");
+    // update the student averageGrade to new input value. 
+    // student object reference assigned as input property.
+    input.student.averageGrade = Number(input.value);
+
+    // recalculate classroom average
+    classAvgVal = calculateClassroomAverage(students);
+
+    // update classroom-average div
+    classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
 }
 
 // get student-table table from index.html
@@ -81,3 +73,9 @@ const studentTable = document.getElementById("student-table");
 
 // render student table
 renderStudentTable(studentTable, students);
+
+//get classroom-average div
+const classroomAverage = document.getElementById("classroom-average");
+// calculate initial classroomAverage
+let classAvgVal = calculateClassroomAverage(students); 
+classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
