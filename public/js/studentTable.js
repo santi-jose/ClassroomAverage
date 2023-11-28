@@ -62,20 +62,12 @@ function updateGrade(input){
     input.student.averageGrade = Number(input.value);
 
     // recalculate classroom average
-    classAvgVal = calculateClassroomAverage(students);
+    let classAvgVal = calculateClassroomAverage(students);
 
     // update classroom-average div
+    const classroomAverage = document.getElementById("classroom-average");
     classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
 }
 
-// get student-table table from index.html
-const studentTable = document.getElementById("student-table");
-
-// render student table
-renderStudentTable(studentTable, students);
-
-//get classroom-average div
-const classroomAverage = document.getElementById("classroom-average");
-// calculate initial classroomAverage
-let classAvgVal = calculateClassroomAverage(students); 
-classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
+// export studentTable
+export { renderStudentTable, updateGrade };
