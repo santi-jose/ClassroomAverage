@@ -37,6 +37,7 @@ function renderRow(tbody, student) {
             input.type = "text"; // set input to type text
             input.value = value; // set default value
             input.student = student; // store reference to student object in input
+            input.id = student.id; // give input element an id corresponding to student object id
 
             // add event listener to input
             input.addEventListener("change", function(){

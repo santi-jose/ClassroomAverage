@@ -1,0 +1,72 @@
+/* style elements we want throughout our web page */
+table, th, td, div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* table style elements */
+table{
+    border-collapse: collapse; /* single border */
+    table-layout: fixed; /* to size columns according to th */
+    width: 80%; /* want table to populate 80% of window */
+    margin-right: 20%; /* give other 20% of window to right margin */
+    text-align: center; /* align text to center */
+}
+
+/* table header style elements */
+th{
+    /* make th stand out with color */
+    background-color: darkorchid;
+    color: white;
+}
+
+/* common th and td padding */
+th, td{
+    padding: 1%;
+}
+
+/* common border styling throughout table */
+table, th, td{
+    border: 2px solid rgb(219, 204, 219);
+}
+
+/* set widths of columns */
+thead th:nth-child(1){
+    width: 10%; /* 10% of table width for ID column*/
+}
+
+/* 30% of table width given to rest of columns individually*/
+thead th:nth-child(2){
+    width: 30%; 
+}
+
+thead th:nth-child(3){
+    width: 30%;
+}
+
+thead th:nth-child(4){
+    width: 30%;
+}
+
+
+/* Styling for text input boxes */
+input{
+    /* make input box fill most of td */
+    text-align: right;
+    width: 95%;
+    margin: auto;
+    font-size: large;
+
+    /* give input box depth */
+    border-style: inset;
+    border-width: 3px;
+
+    /* add color */
+    border-color:rgb(167, 135, 184);
+    background-color: rgb(237, 224, 237);
+}
+
+/* make our classroom-average div stand out */
+#classroom-average{
+    font-size: large;
+    font-weight: bold;
+}

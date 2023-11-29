@@ -1,1 +1,1 @@
-# Repository for Classroom Average assignments.
+# Classroom Average Web Application

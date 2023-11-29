@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node studentTable.js"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jose Santiago",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
