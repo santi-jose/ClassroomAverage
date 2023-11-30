@@ -4,7 +4,12 @@ This is a web application that displays data of students in a class in the form 
 The value of a student's average grade can be edited in the Average Grade column. Entering a new value for a student's average grade and hitting enter will update the classroom grade average. 
 
 ## Installation
-To install the project simply clone the repository into an empty directory on your system.
+To install the project simply clone the repository into an empty directory on your system:\
+```
+mkdir ClassroomAverage\
+cd ClassroomAverage\
+git clone https://github.com/santi-jose/ClassroomAverage.git
+```
 
 ## Run Web App
 1. Open a terminal in the project directory and enter the following command:\
