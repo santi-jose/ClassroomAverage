@@ -7,7 +7,7 @@ This is a web application that displays data of students in a class in the form 
 To install the project simply clone the repository into an empty directory on your system.
 
 ## Run Web App
-1. To run this web application, open a terminal in the project directory and enter the following command:
-`npm start`
+1. To run this web application, open a terminal in the project directory and enter the following command:\
+`npm start`\
 This will run node server.js which will run a server at localhost:3000. 
 2. Then head over to http://localhost:300 where the web application is hosted and you will see the student table.
