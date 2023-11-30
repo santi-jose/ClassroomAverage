@@ -13,7 +13,7 @@ To install the project simply clone the repository into an empty directory on yo
 `C:\path\ClassroomAverage> git clone https://github.com/santi-jose/ClassroomAverage.git`
 
 ## Run Web App
-1. Open a terminal in the project directory and enter command `npm start`:\
+1. Open a terminal in the project directory and run command `npm start`:\
 `C:\path\ClassroomAverage> npm start`\
 This will run server.js which will run a server at port 3000. 
 2. Head over to http://localhost:3000 where the web application is hosted locally and you will be able to interact with the application.
