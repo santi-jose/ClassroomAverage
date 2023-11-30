@@ -5,15 +5,15 @@ The value of a student's average grade can be edited in the Average Grade column
 
 ## Installation
 To install the project simply clone the repository into an empty directory on your system via your preferred terminal:
-1. Make a directory:\
+1. Make a project directory:\
 `C:\path> mkdir ClassroomAverage`
-2. Move to project directory:\
+2. Move into project directory:\
 `C:\path> cd ClassroomAverage`
 3. Clone the repository into this directory:\
 `C:\path\ClassroomAverage> git clone https://github.com/santi-jose/ClassroomAverage.git`
 
 ## Run Web App
-1. Open a terminal in the project directory and enter the following command:\
+1. Open a terminal in the project directory and enter command `npm start`:\
 `C:\path\ClassroomAverage> npm start`\
 This will run server.js which will run a server at port 3000. 
 2. Head over to http://localhost:3000 where the web application is hosted locally and you will be able to interact with the application.
