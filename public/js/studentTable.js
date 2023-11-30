@@ -40,7 +40,7 @@ function renderRow(tbody, student) {
             input.id = student.id; // give input element an id corresponding to student object id
 
             // add event listener to input
-            input.addEventListener("change", function(){
+            input.addEventListener("change", function () {
                 updateGrade(input); // call updateGrade with input element as argument
             });
 
@@ -57,17 +57,17 @@ function renderRow(tbody, student) {
     tbody.appendChild(tr);
 }
 
-function updateGrade(input){
-    // update the student averageGrade to new input value. 
-    // student object reference assigned as input property.
-    input.student.averageGrade = Number(input.value);
+function updateGrade(input) {
+        // update the student averageGrade to new input value. 
+        // student object reference assigned as input property.
+        input.student.averageGrade = Number(input.value);
 
-    // recalculate classroom average
-    let classAvgVal = calculateClassroomAverage(students);
+        // recalculate classroom average
+        let classAvgVal = calculateClassroomAverage(students);
 
-    // update classroom-average div
-    const classroomAverage = document.getElementById("classroom-average");
-    classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
+        // update classroom-average div
+        const classroomAverage = document.getElementById("classroom-average");
+        classroomAverage.innerText = `Classroom Average: ${classAvgVal}`;
 }
 
 // export studentTable
