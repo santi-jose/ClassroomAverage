@@ -10,4 +10,4 @@ To install the project simply clone the repository into an empty directory on yo
 1. Open a terminal in the project directory and enter the following command:\
 `npm start`\
 This will run server.js which will run a server at port 3000. 
-2. Head over to http://localhost:3000 where the web application is hosted and you will be able to interact with the application.
+2. Head over to http://localhost:3000 where the web application is hosted locally and you will be able to interact with the application.
