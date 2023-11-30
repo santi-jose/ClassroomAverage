@@ -6,9 +6,9 @@ The value of a student's average grade can be edited in the Average Grade column
 ## Installation
 To install the project simply clone the repository into an empty directory on your system:\
 ```
-mkdir ClassroomAverage\
-cd ClassroomAverage\
-git clone https://github.com/santi-jose/ClassroomAverage.git
+C:\Users\YourUsername> mkdir ClassroomAverage
+C:\Users\YourUsername> cd ClassroomAverage
+C:\Users\YourUsername> git clone https://github.com/santi-jose/ClassroomAverage.git
 ```
 
 ## Run Web App
