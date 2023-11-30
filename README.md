@@ -5,11 +5,11 @@ The value of a student's average grade can be edited in the Average Grade column
 
 ## Installation
 To install the project simply clone the repository into an empty directory on your system via your preferred terminal:
-1. Make a directory:
-`C:\path> mkdir ClassroomAverage`
-2. Move to project directory:
-`C:\path> cd ClassroomAverage`
-3. Clone the repository into this directory:
+1. Make a directory:\
+`C:\path> mkdir ClassroomAverage`\
+2. Move to project directory:\
+`C:\path> cd ClassroomAverage`\
+3. Clone the repository into this directory:\
 `C:\path\ClassroomAverage> git clone https://github.com/santi-jose/ClassroomAverage.git`
 
 ## Run Web App
