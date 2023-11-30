@@ -8,8 +8,8 @@ table, th, td, div{
 table{
     border-collapse: collapse; /* single border */
     table-layout: fixed; /* to size columns according to th */
-    width: 80%; /* want table to populate 80% of window */
-    margin-right: 20%; /* give other 20% of window to right margin */
+    width: 75%; /* want table to populate 75% of window */
+    margin-right: 25%; /* give other 25% of window to right margin */
     text-align: center; /* align text to center */
 }
 
